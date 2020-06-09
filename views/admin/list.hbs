@@ -1,0 +1,25 @@
+<table class="table table-hover">
+    <div class="mt-5 mb-5 ml-5 justify-content-center" style="color: crimson;"><h5>DANH SÁCH THÔNG TIN TÀI KHOẢN</h5></div>
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Attend</th>
+            <th>Permission</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each this.listUser}}
+        <tr>
+            <td>{{f_ID}}</td>
+            <td>{{f_Name}}</td>
+            <td>{{f_Username}}</td>
+            <td>{{f_Email}}</td>
+            <td>{{attend}}</td>
+            <td>{{f_Permission}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

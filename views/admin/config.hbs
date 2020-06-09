@@ -1,0 +1,32 @@
+<div style="text-align: center;">
+    <h5 class="mb-5 mt-3" style="color: crimson;">SỬA THÔNG TIN NỘI DUNG</h5>
+</div>
+
+<form method="POST" action="/admin/config" style="width: 100%;">
+    <div class="form-group">
+        <label for="exampleInputHomePage">Nội dung HomePage</label>
+        <input type="text" class="form-control" id="exampleInputHomePage" name="titleHome" value="{{this.titleHome}}">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputSuccess">Nội dung hồi đáp tham gia</label>
+        <input type="text" class="form-control" id="exampleInputSuccess" name="titleSuccess"
+            value="{{this.titleSuccess}}">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFail">Nội dung hồi đáp KHÔNG tham gia</label>
+        <input type="text" class="form-control" id="exampleInputFail" name="titlefail" value="{{this.titlefail}}">
+    </div>
+    {{#if this.success}}
+    <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputFail" name="titlefail" readonly
+            value="{{this.success}}">
+    </div>
+    {{else}}
+    <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputFail" name="titlefail" 
+        readonly value="{{this.fail}}">
+    </div>
+    {{/if}}
+
+    <button type="submit" class="btn btn-primary">Chấp Nhận</button>
+</form>

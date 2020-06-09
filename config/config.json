@@ -1,0 +1,35 @@
+{
+    "mysql": {
+        "host": "localhost",
+        "port": 3306,
+        "user": "root",
+        "password": "",
+        "database": "1760197_tuan3",
+        "connectionLimit": 50
+    },
+    "listUser": [{
+            "name": "thong nguyen",
+            "gmail": "thongnguyen@gmail.com",
+            "attend": false
+        },
+        {
+            "name": "Mai",
+            "gmail": "mai@gmail.com",
+            "attend": true
+        }
+    ],
+    "titleSuccess": {
+        "title": "Cảm ơn bạn đã đồng ý tham dự !!!",
+        "titleHome": "Chào mừng bạn đến với công ty ABC !!!",
+        "layout": false
+    },
+    "titlefail": {
+        "title": "Rất tiếc vì chưa có cơ hội phục vụ bạn, Bạn cần check vào ô attend để chúng tôi biết bạn muốn tham gia hội nghị lần này bạn nên đăng ký lại!!!",
+        "layout": "main.hbs"
+    },
+    "loginAdmin": {
+        "name": "admin",
+        "password": "admin"
+    }
+
+}
